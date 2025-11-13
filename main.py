@@ -93,3 +93,16 @@ for number in range(3):
 
 for number in range(1, 10, 2):
     print("Attempt", number, number * "$")
+for x in range(5):
+    for y in range(3):
+        print(f"({x}, {y})")
+command = ""
+while command.lower() != "quit":
+    command = input("<>")
+print("ECHO", command)
+count = 0
+for number in range(1, 10):
+    if number % 2 == 0:
+        print(number)
+        count += 1
+print(f"We have {count} even numbers")
