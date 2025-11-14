@@ -137,11 +137,28 @@
 #     print(key, value)
 # values = {x: x * 2 for x in range(5)}
 # print(values)
-a = [1, 2]
-b = [3, 4]
-combined = [*a, *b]
-print(combined)
-x = {"name": "john", "age": "18"}
-y = {"place": "india"}
-combined = {**x, **y}
-print(combined)
+# a = [1, 2]
+# b = [3, 4]
+# combined = [*a, *b]
+# print(combined)
+# x = {"name": "john", "age": "18"}
+# y = {"place": "india"}
+# combined = {**x, **y}
+# print(combined)
+
+
+# exercise
+
+sentence = "This is a common interview question"
+most_char = ""
+most_count = 0
+
+for char in sentence:
+    if char != "":
+        count = sentence.count(char)
+        if count > most_count:
+            most_count = count
+            most_char = char
+
+print("Most repeated character:", most_char)
+print("Count:", most_count)
